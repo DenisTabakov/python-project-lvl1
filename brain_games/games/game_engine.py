@@ -1,4 +1,4 @@
-from brain_games import games_modul
+from brain_games.games import games_modul
 
 
 def engine_func(module_name):

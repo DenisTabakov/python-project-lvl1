@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from brain_games.game_engine import engine_func
-from brain_games import games_modul
-from brain_games import game_gcd
+from brain_games.games.game_engine import engine_func
+from brain_games.games import games_modul
+from brain_games.games import game_gcd
 
 
 print(games_modul.WELCOME)

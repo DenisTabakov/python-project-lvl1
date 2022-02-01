@@ -1,4 +1,4 @@
-from brain_games import games_modul
+from brain_games.games import games_modul
 
 
 RULE = "Answer 'yes' if the number is even, otherwise answer 'no'"
