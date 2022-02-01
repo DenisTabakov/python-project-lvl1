@@ -8,7 +8,6 @@ from random import randint
 from brain_games.games import games_modul
 
 
-
 RULE = "What number is missing in the progression?"
 
 
