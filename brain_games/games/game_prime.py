@@ -1,3 +1,5 @@
+# Checking a number, prime or not.
+
 from brain_games.games import games_modul
 
 
