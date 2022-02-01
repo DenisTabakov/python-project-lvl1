@@ -1,6 +1,11 @@
-from brain_games.games import games_modul
+# Generating a pair of random numbers and the greatest common divisor.
+# Generating a question, requesting an answer,
+# verifying the correctness of the answer.
+
 from random import randint
 from math import gcd
+
+from brain_games.games import games_modul
 
 
 RULE = "Find the greatest common divisor of given numbers"

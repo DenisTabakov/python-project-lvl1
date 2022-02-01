@@ -1,3 +1,5 @@
+# Game scenario implementation.
+
 from brain_games.games import games_modul
 
 

@@ -1,3 +1,5 @@
+# Functions for implementing games.
+
 import prompt
 from random import randint
 

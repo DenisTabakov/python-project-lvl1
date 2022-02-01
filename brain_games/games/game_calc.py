@@ -1,5 +1,7 @@
-from brain_games.games import games_modul
+# Generating a pair of random numbers and three types of arithmetic operations.
+
 from random import randint
+from brain_games.games import games_modul
 
 
 RULE = "What is the result of the expression?"
