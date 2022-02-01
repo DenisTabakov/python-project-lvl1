@@ -39,3 +39,4 @@ If the answer is correct the question is repeated twice more. If the answer is w
 
 [![asciicast](https://asciinema.org/a/M6H2JZB1WIdx9O2lEbG61jolg.png)](https://asciinema.org/a/M6H2JZB1WIdx9O2lEbG61jolg)
 
+Good luck!
