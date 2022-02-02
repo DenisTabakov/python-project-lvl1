@@ -27,7 +27,7 @@ def game_func():
     rand_quest = list_st[k]
     correct_answer = list_i[k]
 
-    print('Question: ', rand_quest)
+    print('Question: {}'.format(rand_quest))
     user_answer = int(input('Your answer: '))
 
     if games_modul.check_answer(user_answer, correct_answer):
