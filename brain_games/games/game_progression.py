@@ -24,7 +24,7 @@ def game_func():
     g_list[dot_position] = '..'
     str_list = ' '.join(g_list)
 
-    print(str_list)
+    print('Question: {}'.format(str_list))
     user_answer = str(input('Your answer: '))
 
     if games_modul.check_answer(user_answer, correct_answer):
