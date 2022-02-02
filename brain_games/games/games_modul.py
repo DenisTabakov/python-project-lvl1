@@ -32,7 +32,7 @@ def check_answer(user_answer, correct_answer):
         return True
     else:
         print("is wrong answer ;(. Correct answer was:", correct_answer)
-        print("Let's try again,", name)
+        print("Let's try again, {}!".format(name))
         return False
 
 
