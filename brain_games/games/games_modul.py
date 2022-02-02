@@ -39,8 +39,8 @@ def check_answer(user_answer, correct_answer):
 def check_answer_long(check_func):
     min_number = 2
     max_number = 100
-    rand_number = str(randint(min_number, max_number))
-    print('Question: {}'.format(rand_number))
+    rand_number = randint(min_number, max_number)
+    print('Question: {}'.format(str(rand_number)))
     user_answer = str(input('Your answer: '))
     if (check_func(rand_number) and user_answer == 'yes') or \
             (not check_func(rand_number) and user_answer == 'no'):
