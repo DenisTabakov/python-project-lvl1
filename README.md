@@ -14,7 +14,8 @@ brain-progression (Arithmetic progression),
 
 brain-prime (Is it a prime number?)
 
-[![asciicast](https://asciinema.org/a/2zJguc1Ztc7iCEdecjjmZrSHq.png)](https://asciinema.org/a/2zJguc1Ztc7iCEdecjjmZrSHq)
+### installing the package:
+Enter in the terminal: python3 -m pip install --user git+https://github.com/DenisTabakov/python-project-lvl1.git
 
 ### brain-even:
 A random number is shown to the user. And he needs to answer yes if the number is even, or no if it is odd.
