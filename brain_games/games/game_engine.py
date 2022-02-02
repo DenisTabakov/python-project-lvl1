@@ -7,7 +7,7 @@ def engine_func(module_name):
     print(module_name.RULE)
     i = 1
     while i <= 3:
-        if not module_name.foo():
+        if not module_name.game_func():
             break
         if i == 3:
             print('{0}, {1}!'.format('Congratulations', games_modul.name))

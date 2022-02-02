@@ -11,9 +11,11 @@ from brain_games.games import games_modul
 RULE = "Find the greatest common divisor of given numbers"
 
 
-def foo():
-    rand_number_1 = randint(1, 10)
-    rand_number_2 = randint(1, 10)
+def game_func():
+    min_number = 1
+    max_number = 10
+    rand_number_1 = randint(min_number, max_number)
+    rand_number_2 = randint(min_number, max_number)
     rand_quest = '{0} {1}'.format(str(rand_number_1), str(rand_number_2))
     correct_answer = gcd(rand_number_1, rand_number_2)
 

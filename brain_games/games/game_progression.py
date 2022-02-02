@@ -11,12 +11,13 @@ from brain_games.games import games_modul
 RULE = "What number is missing in the progression?"
 
 
-def foo():
+def game_func():
+    length_progression = 11
     step_list = randint(2, 6)
     dot_position = randint(0, 9)
     g_list = []
 
-    for value in range(1, 11):
+    for value in range(1, length_progression):
         g_list.append(str(value * step_list))
 
     correct_answer = g_list[dot_position]

@@ -8,9 +8,11 @@ from brain_games.games import games_modul
 RULE = "What is the result of the expression?"
 
 
-def foo():
-    rand_number_1 = randint(1, 10)
-    rand_number_2 = randint(1, 10)
+def game_func():
+    min_number = 1
+    max_number = 10
+    rand_number_1 = randint(min_number, max_number)
+    rand_number_2 = randint(min_number, max_number)
     k = randint(0, 2)
     list_st = [
         '{0} + {1}'.format(str(rand_number_1), str(rand_number_2)),
