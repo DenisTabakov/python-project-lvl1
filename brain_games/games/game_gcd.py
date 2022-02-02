@@ -19,7 +19,7 @@ def game_func():
     rand_quest = '{0} {1}'.format(str(rand_number_1), str(rand_number_2))
     correct_answer = gcd(rand_number_1, rand_number_2)
 
-    print('Question: ', rand_quest)
+    print('Question: {}'.format(rand_quest))
     user_answer = int(input('Your answer: '))
 
     if games_modul.check_answer(user_answer, correct_answer):
