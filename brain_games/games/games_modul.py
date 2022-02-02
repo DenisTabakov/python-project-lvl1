@@ -47,8 +47,8 @@ def check_answer_long(check_func):
         print('Correct!')
         return True
     elif check_func(rand_number) and user_answer == 'no':
-        print("Correct answer was 'yes'\nLet's try again,", name)
+        print("Correct answer was 'yes'\nLet's try again, {}!".format(name))
         return False
     else:
-        print("Correct answer was 'no'\nLet's try again,", name)
+        print("Correct answer was 'no'\nLet's try again, {}!".format(name))
         return False
