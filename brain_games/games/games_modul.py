@@ -7,8 +7,9 @@ from random import randint
 WELCOME = "Welcome to the Brain Games!"
 
 
-def welcome_user():
+def welcome():
     global name
+    print(WELCOME)
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     return name

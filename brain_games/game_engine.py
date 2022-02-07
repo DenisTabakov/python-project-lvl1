@@ -4,6 +4,7 @@ from brain_games.games import games_modul
 
 
 def engine_func(module_name):
+    games_modul.welcome()
     print(module_name.RULE)
     i = 1
     while i <= 3:

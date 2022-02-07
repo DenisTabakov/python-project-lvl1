@@ -5,10 +5,6 @@ from brain_games.games import games_modul
 from brain_games.games import game_even
 
 
-print(games_modul.WELCOME)
-games_modul.welcome_user()
-
-
 def main():
     engine_func(game_even)
 
