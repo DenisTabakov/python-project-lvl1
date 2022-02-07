@@ -3,7 +3,6 @@
 # verifying the correctness of the answer.
 
 from random import randint
-from math import gcd
 
 from brain_games.games import games_modul
 
@@ -17,7 +16,7 @@ def game_func():
     rand_number_1 = randint(min_number, max_number)
     rand_number_2 = randint(min_number, max_number)
     rand_quest = '{0} {1}'.format(str(rand_number_1), str(rand_number_2))
-    correct_answer = gcd(rand_number_1, rand_number_2)
+    correct_answer = games_modul.nod(rand_number_1, rand_number_2)
 
     print('Question: {}'.format(rand_quest))
     user_answer = int(input('Your answer: '))

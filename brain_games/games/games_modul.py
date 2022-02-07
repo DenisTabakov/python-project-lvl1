@@ -19,6 +19,19 @@ def is_even(number):
     return number % 2 == 0
 
 
+def nod(number_1, number_2):
+    list_1 = []
+    list_2 = []
+    for i in range(1, number_1 + 1):
+        if number_1 % i == 0:
+            list_1.append(i)
+    for k in range(1, number_2 + 1):
+        if number_2 % k == 0:
+            list_2.append(k)
+    list_common = list(set(list_1) & set(list_2))
+    return max(list_common)
+
+
 def is_prime(number):
     for k in range(2, number):
         if number % k == 0:
