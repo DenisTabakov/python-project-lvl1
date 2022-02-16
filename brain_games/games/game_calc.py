@@ -2,8 +2,6 @@
 
 from random import randint
 
-from brain_games.games import games_modul
-
 
 RULE = "What is the result of the expression?"
 
@@ -24,13 +22,6 @@ def game_func():
         rand_number_1 - rand_number_2,
         rand_number_1 * rand_number_2,
     ]
-    rand_quest = list_st[k]
-    correct_answer = list_i[k]
-
-    print('Question: {}'.format(rand_quest))
-    user_answer = int(input('Your answer: '))
-
-    if games_modul.check_answer(user_answer, correct_answer):
-        return True
-    else:
-        return False
+    question = list_st[k]
+    correct_answer = str(list_i[k])
+    return question, correct_answer

@@ -5,29 +5,17 @@
 
 from random import randint
 
-from brain_games.games import games_modul
-
 
 RULE = "What number is missing in the progression?"
 
 
 def game_func():
-    length_progression = 11
-    step_list = randint(2, 6)
+    step_list = randint(1, 6)
     dot_position = randint(0, 9)
     g_list = []
-
-    for value in range(1, length_progression):
+    for value in range(1, 11):
         g_list.append(str(value * step_list))
-
     correct_answer = g_list[dot_position]
     g_list[dot_position] = '..'
-    str_list = ' '.join(g_list)
-
-    print('Question: {}'.format(str_list))
-    user_answer = str(input('Your answer: '))
-
-    if games_modul.check_answer(user_answer, correct_answer):
-        return True
-    else:
-        return False
+    question = ' '.join(g_list)
+    return question, correct_answer

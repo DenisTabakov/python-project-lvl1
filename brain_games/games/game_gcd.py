@@ -4,10 +4,22 @@
 
 from random import randint
 
-from brain_games.games import games_modul
-
 
 RULE = "Find the greatest common divisor of given numbers"
+
+
+def nod(number_1, number_2):
+    ''' greatest common divisor '''
+    list_1 = []
+    list_2 = []
+    for i in range(1, number_1 + 1):
+        if number_1 % i == 0:
+            list_1.append(i)
+    for k in range(1, number_2 + 1):
+        if number_2 % k == 0:
+            list_2.append(k)
+    list_common = list(set(list_1) & set(list_2))
+    return max(list_common)
 
 
 def game_func():
@@ -15,13 +27,6 @@ def game_func():
     max_number = 10
     rand_number_1 = randint(min_number, max_number)
     rand_number_2 = randint(min_number, max_number)
-    rand_quest = '{0} {1}'.format(str(rand_number_1), str(rand_number_2))
-    correct_answer = games_modul.nod(rand_number_1, rand_number_2)
-
-    print('Question: {}'.format(rand_quest))
-    user_answer = int(input('Your answer: '))
-
-    if games_modul.check_answer(user_answer, correct_answer):
-        return True
-    else:
-        return False
+    question = '{0} {1}'.format(str(rand_number_1), str(rand_number_2))
+    correct_answer = str(nod(rand_number_1, rand_number_2))
+    return question, correct_answer
