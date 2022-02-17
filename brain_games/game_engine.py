@@ -29,7 +29,7 @@ def engine_func(module_name):
     i = 1
     while i <= REPLAYS_NUM:
         question, correct_answer = module_name.game_func()
-        print('Question: ', question)
+        print('Question: {}'.format(question))
         user_answer = str(input('Your answer: '))
         if not check_answer(user_answer, correct_answer, name):
             break
