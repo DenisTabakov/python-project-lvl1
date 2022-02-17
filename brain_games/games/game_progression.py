@@ -29,7 +29,7 @@ def game_func():
     step = randint(MIN_STEP, MAX_STEP)
 
     # Random selection of the missing member of the progression.
-    dot_position = randint(0, 9)
+    dot_position = randint(0, LEN_PROG - 1)
 
     g_list = []
     for value in range(START, LEN_PROG + 1):
