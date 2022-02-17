@@ -3,15 +3,24 @@
 from random import randint
 
 
+# The rule of the game.
 RULE = "What is the result of the expression?"
+
+# Minimum number of the range specified numbers.
+MIN_NUMBER = 1
+
+# Maximum number of the range specified numbers.
+MAX_NUMBER = 10
 
 
 def game_func():
-    min_number = 1
-    max_number = 10
-    rand_number_1 = randint(min_number, max_number)
-    rand_number_2 = randint(min_number, max_number)
+    ''' Passes the question and the correct answer to the engine. '''
+    rand_number_1 = randint(MIN_NUMBER, MAX_NUMBER)
+    rand_number_2 = randint(MIN_NUMBER, MAX_NUMBER)
+
     k = randint(0, 2)
+    # Random selection of a mathematical operation.
+
     list_st = [
         '{0} + {1}'.format(str(rand_number_1), str(rand_number_2)),
         '{0} - {1}'.format(str(rand_number_1), str(rand_number_2)),
