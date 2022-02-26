@@ -18,10 +18,10 @@ def gcd(num1, num2):
 def get_question_answer():
     ''' Passes the question and the correct answer to the engine. '''
 
-    rand_number_1 = randint(MIN_NUMBER, MAX_NUMBER)
-    rand_number_2 = randint(MIN_NUMBER, MAX_NUMBER)
+    rand_num_1 = randint(MIN_NUMBER, MAX_NUMBER)
+    rand_num_2 = randint(MIN_NUMBER, MAX_NUMBER)
 
-    question = '{0} {1}'.format(str(rand_number_1), str(rand_number_2))
-    correct_answer = str(gcd(rand_number_1, rand_number_2))
+    question = '{0} {1}'.format(str(rand_num_1), str(rand_num_2))
+    correct_answer = str(gcd(rand_num_1, rand_num_2))
 
     return question, correct_answer
