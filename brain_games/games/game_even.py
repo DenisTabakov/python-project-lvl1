@@ -1,28 +1,26 @@
-# Checking a number for parity.
-
 from random import randint
 
 
-# The rule of the game.
 RULE = "Answer 'yes' if the number is even, otherwise answer 'no'"
 
-# Minimum number.
 MIN_NUMBER = 2
 
-# Maximum number.
 MAX_NUMBER = 100
 
 
 def is_even(number):
     ''' parity check '''
-    if number % 2 == 0:
-        return 'yes'
-    else:
-        return 'no'
+    return number % 2 == 0
 
 
-def game_func():
+def get_question_answer():
     ''' Passes the question and the correct answer to the engine. '''
+
     question = randint(MIN_NUMBER, MAX_NUMBER)
-    correct_answer = is_even(question)
+
+    if is_even(question):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+
     return question, correct_answer

@@ -1,40 +1,34 @@
-# Generating an arithmetic progression in increments from 2 to 6
-# and replacing a random term with dots.
-# Generating a question, requesting an answer and verifying its
-# correctness.
-
 from random import randint
 
-
-# The rule of the game.
 RULE = "What number is missing in the progression?"
 
-# Minimum progression step.
 MIN_STEP = 1
 
-# Maximum progression step.
 MAX_STEP = 6
 
-# The first member of the progression.
-START = 1
+START_NUM = 1
 
-# Progression length.
 LEN_PROG = 10
 
 
-def game_func():
-    ''' Passes the question and the correct answer to the engine. '''
+def get_progression():
+    ''' generates an arithmetic progression '''
 
-    # Random selection of the progression step.
     step = randint(MIN_STEP, MAX_STEP)
+    progression_list = []
 
-    # Random selection of the missing member of the progression.
-    dot_position = randint(0, LEN_PROG - 1)
+    for value in range(START_NUM, LEN_PROG + 1):
+        progression_list.append(str(value * step))
 
-    g_list = []
-    for value in range(START, LEN_PROG + 1):
-        g_list.append(str(value * step))
-    correct_answer = g_list[dot_position]
-    g_list[dot_position] = '..'
-    question = ' '.join(g_list)
+    return progression_list
+
+
+def get_question_answer():
+    ''' Passes the question and the correct answer to the engine. '''
+    progression = get_progression()
+    dot_position = randint(0, 9)
+    correct_answer = progression[dot_position]
+    progression[dot_position] = '..'
+    question = ' '.join(progression)
+
     return question, correct_answer
