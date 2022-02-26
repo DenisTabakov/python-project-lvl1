@@ -13,7 +13,7 @@ def engine(module_name):
 
     for _ in range(REPLAYS_NUM):
         question, correct_answer = module_name.get_question_answer()
-        print('Question: ', question)
+        print('Question: {}'.format(question))
         user_answer = str(input('Your answer: '))
         if user_answer == correct_answer:
             print('Correct!')
