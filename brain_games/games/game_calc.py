@@ -18,12 +18,12 @@ def calc(num_1, num_2, sign):
 def get_question_answer():
     ''' Passes the question and the correct answer to the engine. '''
 
-    rand_number_1 = randint(MIN_NUMBER, MAX_NUMBER)
-    rand_number_2 = randint(MIN_NUMBER, MAX_NUMBER)
+    rand_num_1 = randint(MIN_NUMBER, MAX_NUMBER)
+    rand_num_2 = randint(MIN_NUMBER, MAX_NUMBER)
 
     sign = choice('+-*')
 
-    question = '{0} {1} {2}'.format(str(rand_number_1), sign, str(rand_number_2))
-    correct_answer = str(calc(rand_number_1, rand_number_2, sign))
+    question = '{0} {1} {2}'.format(str(rand_num_1), sign, str(rand_num_2))
+    correct_answer = str(calc(rand_num_1, rand_num_2, sign))
 
     return question, correct_answer
